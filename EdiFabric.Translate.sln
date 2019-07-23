@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EdiFabric.Translate.X12.Core20", "EdiFabric.Translate.X12.Core20\EdiFabric.Translate.X12.Core20.csproj", "{7EF006A7-78B4-49AB-A439-4D76F0977B83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EdiFabric.Translate.X12.Net45", "EdiFabric.Translate.X12.Net45\EdiFabric.Translate.X12.Net45.csproj", "{127BBFA8-4F0A-40F5-A552-43C136EB5B58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EdiFabric.Translate.EDIFACT.Core20", "EdiFabric.Translate.EDIFACT.Core20\EdiFabric.Translate.EDIFACT.Core20.csproj", "{16782942-86FE-45A4-AAE4-AA56C5DEBDD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EdiFabric.Translate.HIPAA.Core20", "EdiFabric.Translate.HIPAA.Core20\EdiFabric.Translate.HIPAA.Core20.csproj", "{6FC58228-25F1-41E5-B513-A5775BC626A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EdiFabric.Translate.EDIFACT.Net45", "EdiFabric.Translate.EDIFACT.Net45\EdiFabric.Translate.EDIFACT.Net45.csproj", "{6E8121C8-98C4-417B-B785-D0DD70709094}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EdiFabric.Translate.HIPAA.Net45", "EdiFabric.Translate.HIPAA.Net45\EdiFabric.Translate.HIPAA.Net45.csproj", "{E9350BDA-86FC-4D47-9AEB-70331FFD2B96}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7EF006A7-78B4-49AB-A439-4D76F0977B83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EF006A7-78B4-49AB-A439-4D76F0977B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EF006A7-78B4-49AB-A439-4D76F0977B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EF006A7-78B4-49AB-A439-4D76F0977B83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{127BBFA8-4F0A-40F5-A552-43C136EB5B58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{127BBFA8-4F0A-40F5-A552-43C136EB5B58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{127BBFA8-4F0A-40F5-A552-43C136EB5B58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{127BBFA8-4F0A-40F5-A552-43C136EB5B58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16782942-86FE-45A4-AAE4-AA56C5DEBDD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16782942-86FE-45A4-AAE4-AA56C5DEBDD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16782942-86FE-45A4-AAE4-AA56C5DEBDD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16782942-86FE-45A4-AAE4-AA56C5DEBDD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FC58228-25F1-41E5-B513-A5775BC626A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FC58228-25F1-41E5-B513-A5775BC626A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FC58228-25F1-41E5-B513-A5775BC626A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FC58228-25F1-41E5-B513-A5775BC626A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E8121C8-98C4-417B-B785-D0DD70709094}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E8121C8-98C4-417B-B785-D0DD70709094}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E8121C8-98C4-417B-B785-D0DD70709094}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E8121C8-98C4-417B-B785-D0DD70709094}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9350BDA-86FC-4D47-9AEB-70331FFD2B96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9350BDA-86FC-4D47-9AEB-70331FFD2B96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9350BDA-86FC-4D47-9AEB-70331FFD2B96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9350BDA-86FC-4D47-9AEB-70331FFD2B96}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D49B780B-2EA6-45CC-89A8-E9DAC9EB8399}
+	EndGlobalSection
+EndGlobal

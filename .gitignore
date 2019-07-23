@@ -3,3 +3,19 @@
 ################################################################################
 
 /.vs/EDI-Translator-Demo/v15/.suo
+/.vs/EdiFabric.Translate/v15/Server/sqlite3
+/.vs/EdiFabric.Translate/v15/.suo
+/.vs
+/EdiFabric.Translate.EDIFACT.Core20/bin/Debug/netcoreapp2.2
+/EdiFabric.Translate.EDIFACT.Core20/obj
+/EdiFabric.Translate.EDIFACT.Net45/bin/Debug
+/EdiFabric.Translate.EDIFACT.Net45/obj/Debug
+/EdiFabric.Translate.HIPAA.Core20/bin/Debug/netcoreapp2.2
+/EdiFabric.Translate.HIPAA.Core20/obj
+/EdiFabric.Translate.HIPAA.Net45/bin/Debug
+/EdiFabric.Translate.HIPAA.Net45/obj/Debug
+/EdiFabric.Translate.X12.Core20/bin/Debug/netcoreapp2.2
+/EdiFabric.Translate.X12.Core20/obj
+/EdiFabric.Translate.X12.Net45/bin/Debug
+/EdiFabric.Translate.X12.Net45/obj/Debug
+/packages
