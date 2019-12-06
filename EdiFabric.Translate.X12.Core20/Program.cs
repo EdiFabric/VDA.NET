@@ -1,6 +1,6 @@
 ﻿using EdiFabric.Core.Model.Edi;
 using EdiFabric.Framework.Readers;
-using EdiFabric.Templates.X12;
+using EdiFabric.Templates.X12004010;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
