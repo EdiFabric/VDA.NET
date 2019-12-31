@@ -6,9 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="EdiFabric.Framework" Version="9.8.7.1" />
+    <PackageReference Include="EdiFabric.Framework" Version="9.8.7.2" />
     <PackageReference Include="EdiFabric.Templates.Hipaa" Version="1.2.0" />
-    <PackageReference Include="System.Runtime.Caching" Version="4.7.0" />
   </ItemGroup>
 
 </Project>
