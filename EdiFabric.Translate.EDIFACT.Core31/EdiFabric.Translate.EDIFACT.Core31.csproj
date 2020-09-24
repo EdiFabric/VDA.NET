@@ -6,8 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="EdiFabric.Framework" Version="9.8.7.4" />
-    <PackageReference Include="EdiFabric.Templates.Edifact" Version="1.5.0" />
+    <PackageReference Include="EdiFabric.Framework" Version="9.8.7.5" />
+    <PackageReference Include="EdiFabric.Templates.Edifact" Version="1.5.1" />
   </ItemGroup>
 
 </Project>
