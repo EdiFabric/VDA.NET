@@ -59,15 +59,25 @@ Explore the different features of EdiFabric, such as translating from VDA file (
 9. Validation
 All trial templates in EdiFabric.Templates.Vda can be used for validation. If you need to test with a different template, please contact us.
 
-10. Trial use
+10. EDI Templates
+EdiFabric supports all EDIFACT/EANCOM/IATA versions and message types. We have an extensive library of EDI templates, howevere, if you can't find a particular transaction, please let us know. 
+The following templates are available out-of-the-box:
+
+https://support.edifabric.com/hc/en-us/articles/360000367932-VDA-Templates-4905-4906-4908-4913-4915
+
+For an interactive view of all templates go to EdiNation's EDI Webpad (no registration is required):
+
+https://www.edination.com/edi-models-vda.html
+
+11. Trial use
 The trial assemblies are valid for 14 days and are subject to EdiFabric's license terms available at https://www.edifabric.com/files/eula.pdf. Upon expiry, the trial packages will begin throwing exceptions. 
 To continue using the trial and the examples, you'll need to either request a trial extension or replace the trial packages, together with all references to the trial packages, with the full version of EdiFabric. 
 
-11. Warranty
+12. Warranty
 The source code in these example projects is strictly for demonstrational purposes and is provided "AS IS" without warranty of any kind, whether expressed or implied, including but not limited to the
 implied warranties of merchantability and/or fitness for a particular purpose.
 
-12. Additional information
+13. Additional information
 
 EdiFabric tutorial
 https://support.edifabric.com/hc/en-us/articles/360000291511-Tutorial-EDI-NET-Tools-Basics
