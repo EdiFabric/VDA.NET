@@ -28,11 +28,11 @@ EdiFabric.Core.9.8.7.5.nupkg
 EdiFabric.Framework.9.8.7.5.nupkg
 EdiFabric.Plugins.Ack.Edifact.9.8.7.5.nupkg
 EdiFabric.Plugins.Ack.X12.9.8.7.5.nupkg
-EdiFabric.Templates.Edifact.1.5.1.nupkg
-EdiFabric.Templates.Hipaa.1.5.1.nupkg
-EdiFabric.Templates.Padis.1.5.1.nupkg
-EdiFabric.Templates.Vda.1.5.1.nupkg
-EdiFabric.Templates.X12.1.5.1.nupkg
+EdiFabric.Templates.Edifact.2.0.0.nupkg
+EdiFabric.Templates.Hipaa.2.0.0.nupkg
+EdiFabric.Templates.Padis.2.0.0.nupkg
+EdiFabric.Templates.Vda.2.0.0.nupkg
+EdiFabric.Templates.X12.2.0.0.nupkg
 
 5. Setup
 Add folder edifabric-trial as a package source in Visual Studio:
