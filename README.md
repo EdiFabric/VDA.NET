@@ -11,7 +11,7 @@ The examples are organized into different projects by product feature.
 - EdiFabric trial NuGet packages and serial number.
 
 ## 3. Download
-The trial NuGet packages and the trial serial number can be downloaded from https://sowl.co/oApEt. 
+The trial NuGet packages and the trial serial number can be downloaded from [here](https://sowl.co/oApEt). 
 
 ## 4. Install
 Unzip the downloaded file in the previous step. The following folders should be available at the same level:
