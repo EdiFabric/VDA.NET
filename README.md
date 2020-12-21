@@ -79,14 +79,11 @@ implied warranties of merchantability and/or fitness for a particular purpose.
 
 ## 13. Additional information
 
-EdiFabric tutorial
-https://support.edifabric.com/hc/en-us/articles/360000291511-Tutorial-EDI-NET-Tools-Basics
+[EdiFabric tutorial](https://support.edifabric.com/hc/en-us/articles/360000291511-Tutorial-EDI-NET-Tools-Basics)
 
-Knowledge Base
-https://support.edifabric.com
+[Knowledge Base](https://support.edifabric.com)
 
-Support
-https://support.edifabric.com/hc/en-us/requests/new
+[Support](https://support.edifabric.com/hc/en-us/requests/new)
 
 Last updated on December 16, 2020
-2020 © EdiFabric
+## 2020 © EdiFabric
