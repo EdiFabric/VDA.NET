@@ -78,7 +78,7 @@ To continue using the trial and the examples, you'll need to either request a tr
 
 ## 13. Additional information
 
-[EdiFabric tutorial](https://support.edifabric.com/hc/en-us/articles/360000291511-Tutorial-EDI-NET-Tools-Basics)
+[EdiFabric Tutorial](https://support.edifabric.com/hc/en-us/articles/360000291511-Tutorial-EDI-NET-Tools-Basics)
 
 [Knowledge Base](https://support.edifabric.com)
 
