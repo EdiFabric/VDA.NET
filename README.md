@@ -42,7 +42,7 @@ Add folder edifabric-trial as a package source in Visual Studio:
 
 Rebuild the solution to install the rest of the dependencies. If there are any build errors, contact us at https://support.edifabric.com/hc/en-us/requests/new for assistance.  
 
-NOTE: it is possible to also reference DLLs instead of NuGet packages. Change the .nupkg extension of the packages to .zip, unzip them, and extract the DLL files. 
+> NOTE: it is possible to also reference DLLs instead of NuGet packages. Change the .nupkg extension of the packages to .zip, unzip them, and extract the DLL files. 
 Then uninstall the NuGet packages from each project and replace them with DLL references.  
 
 ## 6. Serial Number
@@ -85,4 +85,4 @@ The source code in these example projects is strictly for demonstrational purpos
 [Support](https://support.edifabric.com/hc/en-us/requests/new)
 
 Last updated on December 16, 2020
-## 2020 © EdiFabric
+### 2020 © EdiFabric
