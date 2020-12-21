@@ -1,4 +1,4 @@
-# EDiFabric examples for VDA
+# EdiFabric examples for VDA
 
 Go to https://support.edifabric.com/hc/en-us/articles/360000280532-Trial-EdiFabric-Examples for the web version of this README.
 
