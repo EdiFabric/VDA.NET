@@ -63,11 +63,10 @@ To get started, set project EdiFabric.Examples.VDA.Read as the startup project, 
 ## 8. Examples by feature
 Explore the different features of EdiFabric, such as translating from VDA file (Read) and generating VDA file (Write).  
 
-## 9. Validation
+## 9. VDA Validation
 All trial templates in EdiFabric.Templates.Vda can be used for validation. If you need to test with a different template, please contact us.  
 
-## 10. EDI Templates
-EdiFabric supports all EDIFACT/EANCOM/IATA versions and message types. We have an extensive library of EDI templates, howevere, if you can't find a particular transaction, please let us know.   
+## 10. VDA Templates
 The following templates are available out-of-the-box:  
 
 https://support.edifabric.com/hc/en-us/articles/360000367932-VDA-Templates-4905-4906-4908-4913-4915
