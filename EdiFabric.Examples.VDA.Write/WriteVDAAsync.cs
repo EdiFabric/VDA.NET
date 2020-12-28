@@ -23,7 +23,7 @@ namespace EdiFabric.Examples.VDA.Write
 
             using (var stream = new MemoryStream())
             {
-                using (var writer = new VdaWriter(stream, Environment.NewLine, null, TrialLicense.SerialNumber))
+                using (var writer = new VdaWriter(stream, Environment.NewLine))
                 {
                     //  2. Write it out
                     await writer.WriteAsync(deliveryInstruction);

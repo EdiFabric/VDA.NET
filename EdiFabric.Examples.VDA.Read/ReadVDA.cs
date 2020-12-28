@@ -29,7 +29,7 @@ namespace EdiFabric.Examples.VDA.Read
             //  2.  Read a single transaction
             List<IEdiItem> ediItems;
 
-            using (var ediReader = new VdaReader(ediStream, MessageContextFactory, Encoding.UTF8, Environment.NewLine, 128, TrialLicense.SerialNumber))
+            using (var ediReader = new VdaReader(ediStream, MessageContextFactory))
             {
                 ediItems = ediReader.ReadToEnd().ToList();
             }       
