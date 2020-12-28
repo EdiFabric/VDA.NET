@@ -42,9 +42,9 @@ Rebuild the solution to install the rest of the dependencies. If there are any b
 NOTE: it is possible to also reference DLLs instead of NuGet packages. Change the .nupkg extension of the packages to .zip, unzip them, and extract the DLL files. 
 Then uninstall the NuGet packages from each project and replace them with DLL references.
 
-6. Serial Number
-The serial number is included in the file serial.key in folder edifabric-trial. Ensure it is there and that the file is not empty. The serial number is used in the file License.cs in project EdiFabric.Examples.VDA.Common. 
-Open the file and ensure that the serialKeyPath is correct. If the serial number is invalid or the file is missing, contact us at https://support.edifabric.com/hc/en-us/requests/new for assistance.
+6. Serial Key
+The serial key is included in the file serial.key in folder edifabric-trial. Ensure it is there and that the file is not empty. The serial key is loaded in the file SerialKey.cs in project EdiFabric.Examples.VDA.Common. 
+Open the file and ensure that the serialKeyPath is correct. If the serial key is invalid or the file is missing, contact us at https://support.edifabric.com/hc/en-us/requests/new for assistance.
 
 7. Gettings started
 To get started, set project EdiFabric.Examples.VDA.Read as the startup project, open ReadVDA.cs and either run it as it is or change the path to point to a local 4905 test file.

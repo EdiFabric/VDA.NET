@@ -6,7 +6,7 @@ namespace EdiFabric.Examples.VDA.Read
     {
         static void Main(string[] args)
         {
-            SerialKey.Set(TrialLicense.SerialKey);
+            SerialKey.Set(Common.SerialKey.Get());
 
             ReadVDA.Run();
             ReadVDABatch.Run();
