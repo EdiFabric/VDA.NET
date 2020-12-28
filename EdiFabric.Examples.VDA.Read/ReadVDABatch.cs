@@ -29,7 +29,7 @@ namespace EdiFabric.Examples.VDA.Read
             //  2.  Read multiple transactions batched up in the same file
             List<IEdiItem> ediItems;
 
-            using (var ediReader = new VdaReader(ediStream, MessageContextFactory))
+            using (var ediReader = new VdaReader(ediStream, MessageContextFactory, Encoding.UTF8, Environment.NewLine))
             {
                 ediItems = ediReader.ReadToEnd().ToList();
             }

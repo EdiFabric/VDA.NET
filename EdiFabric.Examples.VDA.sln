@@ -15,6 +15,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample files", "Sample files", "{6D570858-5037-4D28-9B59-86EF41F88535}"
 	ProjectSection(SolutionItems) = preProject
 		Files\Vda_4905_02.txt = Files\Vda_4905_02.txt
+		Files\Vda_4905_02_Batch.txt = Files\Vda_4905_02_Batch.txt
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EdiFabric.Examples.VDA.Read", "EdiFabric.Examples.VDA.Read\EdiFabric.Examples.VDA.Read.csproj", "{27BB09F5-0067-43D4-A2A2-1AC506708959}"
