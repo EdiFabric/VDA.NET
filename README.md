@@ -31,7 +31,7 @@ Rebuild the solution to install the rest of the dependencies. If there are any b
 > NOTE: it is possible to also reference DLLs instead of NuGet packages. Change the .nupkg extension of the packages to .zip, unzip them, and extract the DLL files. 
 Then uninstall the NuGet packages from each project and replace them with DLL references.  
 
-## 4. Serial Number
+## 4. Serial Key
 [Download the serial key](https://sowl.co/oApEt). The serial key is included in the file serial.key in folder edifabric-trial. Ensure it is there and that the file is not empty. The serial key is loaded in the file SerialKey.cs in project EdiFabric.Examples.VDA.Common. Open the file and ensure that the serialKeyPath is correct.
 If the serial key is invalid or the file is missing, contact us at https://support.edifabric.com/hc/en-us/requests/new for assistance.  
 
