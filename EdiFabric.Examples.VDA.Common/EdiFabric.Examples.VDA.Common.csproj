@@ -35,7 +35,7 @@
       <HintPath>..\packages\EdiFabric.Trial.10.4.1\lib\net45\EdiFabric.dll</HintPath>
     </Reference>
     <Reference Include="EdiFabric.Templates.Vda, Version=2.6.4.0, Culture=neutral, PublicKeyToken=30198c5f4974e51a, processorArchitecture=MSIL">
-      <HintPath>..\packages\EdiFabric.Templates.Vda.2.6.4\lib\net45\EdiFabric.Templates.Vda.dll</HintPath>
+      <HintPath>..\packages\EdiFabric.Templates.Vda.2.6.5\lib\net45\EdiFabric.Templates.Vda.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
