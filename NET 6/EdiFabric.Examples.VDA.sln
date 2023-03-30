@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Gettings started", "_Gettings started", "{9D6EE8A4-DB6A-41D5-914E-7A3C2CADA771}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.txt = ..\README.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples by feature", "Examples by feature", "{AEACC2D0-1133-4FA3-BCF6-E546EBF2197D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample files", "Sample files", "{EBEAE2FB-F548-4FB7-8DA7-0C5F28F96505}"
+	ProjectSection(SolutionItems) = preProject
+		..\Files\Vda_4905_02.txt = ..\Files\Vda_4905_02.txt
+		..\Files\Vda_4905_02_Batch.txt = ..\Files\Vda_4905_02_Batch.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EdiFabric.Examples.VDA.Common", "EdiFabric.Examples.VDA.Common\EdiFabric.Examples.VDA.Common.csproj", "{25BE9AEB-BF11-4B78-8235-7FB010602E8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EdiFabric.Examples.VDA.Read", "EdiFabric.Examples.VDA.Read\EdiFabric.Examples.VDA.Read.csproj", "{7AF9AED4-C8AD-41CE-9A69-8CB33E9DFC17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EdiFabric.Examples.VDA.Write", "EdiFabric.Examples.VDA.Write\EdiFabric.Examples.VDA.Write.csproj", "{A6FEB8FC-78CD-4557-882E-3B05062B1675}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25BE9AEB-BF11-4B78-8235-7FB010602E8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25BE9AEB-BF11-4B78-8235-7FB010602E8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25BE9AEB-BF11-4B78-8235-7FB010602E8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25BE9AEB-BF11-4B78-8235-7FB010602E8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AF9AED4-C8AD-41CE-9A69-8CB33E9DFC17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AF9AED4-C8AD-41CE-9A69-8CB33E9DFC17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AF9AED4-C8AD-41CE-9A69-8CB33E9DFC17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AF9AED4-C8AD-41CE-9A69-8CB33E9DFC17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6FEB8FC-78CD-4557-882E-3B05062B1675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6FEB8FC-78CD-4557-882E-3B05062B1675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6FEB8FC-78CD-4557-882E-3B05062B1675}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6FEB8FC-78CD-4557-882E-3B05062B1675}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7AF9AED4-C8AD-41CE-9A69-8CB33E9DFC17} = {AEACC2D0-1133-4FA3-BCF6-E546EBF2197D}
+		{A6FEB8FC-78CD-4557-882E-3B05062B1675} = {AEACC2D0-1133-4FA3-BCF6-E546EBF2197D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {10E76277-303C-465C-B78E-D9442E365E2E}
+	EndGlobalSection
+EndGlobal

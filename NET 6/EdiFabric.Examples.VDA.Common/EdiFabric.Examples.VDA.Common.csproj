@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.VDA.Common\SerialKey.cs" Link="SerialKey.cs" />
+    <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.VDA.Common\StreamExtensions.cs" Link="StreamExtensions.cs" />
+    <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.VDA.Common\TS4905Builder.cs" Link="TS4905Builder.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="EdiFabric">
+      <HintPath>..\..\..\edifabric\net6.0\EdiFabric.dll</HintPath>
+    </Reference>
+    <Reference Include="EdiFabric.Templates.Vda">
+      <HintPath>..\..\..\edifabric\net6.0\EdiFabric.Templates.Vda.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
