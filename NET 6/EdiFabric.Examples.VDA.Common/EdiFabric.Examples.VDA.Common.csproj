@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.VDA.Common\Config.cs" Link="Config.cs" />
     <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.VDA.Common\SerialKey.cs" Link="SerialKey.cs" />
     <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.VDA.Common\StreamExtensions.cs" Link="StreamExtensions.cs" />
     <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.VDA.Common\TS4905Builder.cs" Link="TS4905Builder.cs" />
