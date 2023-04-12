@@ -24,7 +24,7 @@ namespace EdiFabric.Examples.VDA.Read
             Debug.WriteLine("******************************");
 
             //  1.  Load to a stream 
-            Stream ediStream = File.OpenRead(Directory.GetCurrentDirectory() + @"\..\..\..\Files\Vda_4905_02_Batch.txt");
+            Stream ediStream = File.OpenRead(Directory.GetCurrentDirectory() + Config.TestFilesPath + @"\Vda_4905_02_Batch.txt");
 
             //  2.  Read multiple transactions batched up in the same file
             List<IEdiItem> ediItems;

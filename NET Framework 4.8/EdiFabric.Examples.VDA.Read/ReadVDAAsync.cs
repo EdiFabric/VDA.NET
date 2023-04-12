@@ -24,7 +24,7 @@ namespace EdiFabric.Examples.VDA.Read
             Debug.WriteLine("******************************");
 
             //  1.  Load to a stream 
-            Stream ediStream = File.OpenRead(Directory.GetCurrentDirectory() + @"\..\..\..\Files\Vda_4905_02.txt");
+            Stream ediStream = File.OpenRead(Directory.GetCurrentDirectory() + Config.TestFilesPath + @"\Vda_4905_02.txt");
 
             //  2.  Read a single transaction
             List<IEdiItem> ediItems;
