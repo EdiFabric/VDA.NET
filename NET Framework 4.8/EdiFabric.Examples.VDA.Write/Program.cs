@@ -6,7 +6,7 @@ namespace EdiFabric.Examples.VDA.Write
     {
         static void Main(string[] args)
         {
-            SerialKey.Set(Common.SerialKey.Get());
+            TokenFileCache.Set();
 
             WriteVDA.Run();
             WriteVDABatch.Run();
