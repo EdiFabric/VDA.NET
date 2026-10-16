@@ -53,7 +53,7 @@ namespace EdiFabric.Examples.VDA.Read
             var sender = segment.Substring(15, 9);
             var receiver = segment.Substring(6, 9);
 
-            return new MessageContext("4905", newControlNumber, "1", null, "VDA", null, sender, "", receiver, "", mc => Assembly.Load(new AssemblyName("EdiFabric.Templates.Vda")));
+            return new MessageContext("4905", newControlNumber, "1", null, "VDA", null, sender, "", receiver, "", mc => Assembly.Load(new AssemblyName("EdiFabric.Examples.VDA.Common")));
         }
     }
 }

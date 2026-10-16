@@ -8,6 +8,14 @@
 
   <ItemGroup>
     <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.VDA.Common\Config.cs" Link="Config.cs" />
+    <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.VDA.Common\EF_VDA_Codes.cs" Link="EF_VDA_Codes.cs" />
+    <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.VDA.Common\EF_VDA_TS4905.cs" Link="EF_VDA_TS4905.cs" />
+    <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.VDA.Common\EF_VDA_TS4906.cs" Link="EF_VDA_TS4906.cs" />
+    <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.VDA.Common\EF_VDA_TS4907.cs" Link="EF_VDA_TS4907.cs" />
+    <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.VDA.Common\EF_VDA_TS4908.cs" Link="EF_VDA_TS4908.cs" />
+    <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.VDA.Common\EF_VDA_TS4913.cs" Link="EF_VDA_TS4913.cs" />
+    <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.VDA.Common\EF_VDA_TS4915.cs" Link="EF_VDA_TS4915.cs" />
+    <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.VDA.Common\EF_VDA_TS4927.cs" Link="EF_VDA_TS4927.cs" />
     <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.VDA.Common\StreamExtensions.cs" Link="StreamExtensions.cs" />
     <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.VDA.Common\TokenFileCache.cs" Link="TokenFileCache.cs" />
     <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.VDA.Common\TS4905Builder.cs" Link="TS4905Builder.cs" />
@@ -15,7 +23,6 @@
 
   <ItemGroup>
     <PackageReference Include="EdiFabric" Version="11.0.0" />
-    <PackageReference Include="EdiFabric.Templates.Vda" Version="3.0.0" />
   </ItemGroup>
 
 </Project>
