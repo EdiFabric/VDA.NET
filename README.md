@@ -4,15 +4,20 @@
 
 EdiFabric does not include communication components (AS2 or SFTP), a dashboard, or a UI. It is a library you call from your own application.
 
-The .NET 6 projects compile the same sources as the .NET Framework 4.8 projects. Both solutions reference [EdiFabric 11.0.0](https://www.nuget.org/packages/EdiFabric) and the template packages from NuGet. The examples target .NET 6 for backward compatibility. EdiFabric 11.0.0 also ships targets for .NET 8, .NET 9, and .NET 10. To evaluate one of those, change `TargetFramework` in the project file and rebuild.
+The .NET 6 projects compile the same sources as the .NET Framework 4.8 projects. Both solutions reference [EdiFabric 11.0.0](https://www.nuget.org/packages/EdiFabric) from NuGet. The examples target .NET 6 for backward compatibility. EdiFabric 11.0.0 also ships targets for .NET 8, .NET 9, and .NET 10. To evaluate one of those, change `TargetFramework` in the project file and rebuild.
 
 | Path | Purpose |
 | --- | --- |
 | `NET 6/EdiFabric.Examples.VDA.sln` | .NET 6 solution |
 | `NET Framework 4.8/EdiFabric.Examples.VDA.sln` | .NET Framework 4.8 solution |
 | `NET Framework 4.8/EdiFabric.Examples.VDA.Common/Config.cs` | Serial key shared by every example |
+| `NET Framework 4.8/EdiFabric.Examples.VDA.Common/EF_VDA_*.cs` | C# templates used by the examples |
 | `NET Framework 4.8/EdiFabric.Examples.VDA.Read/ReadVDA.cs` | Read a 4905 delivery instruction |
 | `Files/` | Sample VDA files |
+
+### Templates
+
+EdiFabric reads and writes VDA through templates: C# classes that describe each message, its records, fields and codes. The examples keep their templates as C# files in the **EdiFabric.Examples.VDA.Common** class library: one file per VDA message (4905, 4906, 4907, 4908, 4913, 4915 and 4927), plus the shared codes. The examples reference that project and load its assembly in the `MessageContext` they pass to `VdaReader`. This is how you use templates in your own application: download the C# files, add them to a class library, and reference it. See [EDI templates](#edi-templates).
 
 ## Requirements
 
@@ -20,14 +25,16 @@ The .NET 6 projects compile the same sources as the .NET Framework 4.8 projects.
 - .NET 6 for `NET 6/EdiFabric.Examples.VDA.sln`. The projects set `<TargetFramework>net6.0</TargetFramework>` so they stay compatible with existing .NET 6 apps. EdiFabric 11.0.0 also provides `net8.0`, `net9.0`, and `net10.0`. To evaluate a later version, change that property (for example to `net8.0`) and rebuild.
 - .NET Framework 4.8 for `NET Framework 4.8/EdiFabric.Examples.VDA.sln`.
 
-1. [Sign up free for **Community**](https://www.edifabric.com/pricing.html) to get an evaluation serial key. Community never expires, requires no credit card, and is for non-production use. The first 14 days after you subscribe have unlimited operations, then the quota is 250 per day. To extend the unlimited period, ask through the [support portal](https://support.edifabric.com/hc/en-us/requests/new) or at [support@edifabric.com](mailto:support@edifabric.com). After signup, retrieve your serial from [Your Account](https://www.edifabric.com/docs/getting-started/your-account.html).
-2. Paste that serial into `TrialSerialKey` in `NET Framework 4.8/EdiFabric.Examples.VDA.Common/Config.cs`. The .NET 6 projects link this file, so one edit covers both solutions.
+All projects can be evaluated with the demo serial key `bd96a836feca45cb91c86ee65d281f52` without creating an account. It is already set in `TrialSerialKey` in `NET Framework 4.8/EdiFabric.Examples.VDA.Common/Config.cs`. This provisional key has a limited quota. Once it runs out, you need an account and a Community subscription to continue the evaluation:
 
-NuGet restore pulls **EdiFabric 11.0.0** and **EdiFabric.Templates.Vda 3.0.0**.
+1. [Sign up free for **Community**](https://www.edifabric.com/pricing.html) to get your own evaluation serial key. Community never expires, requires no credit card, and is for non-production use. The first 14 days after you subscribe have unlimited operations, then the quota is 250 per day. To extend the unlimited period, ask through the [support portal](https://support.edifabric.com/hc/en-us/requests/new) or at [support@edifabric.com](mailto:support@edifabric.com). After signup, retrieve your serial from [Your Account](https://www.edifabric.com/docs/getting-started/your-account.html).
+2. Replace the demo key in `TrialSerialKey` with your serial. The .NET 6 projects link this file, so one edit covers both solutions.
+
+NuGet restore pulls **EdiFabric 11.0.0**.
 
 ## Getting started
 
-**Sign up free for Community** at [edifabric.com/pricing](https://www.edifabric.com/pricing.html) and put your serial in `Config.TrialSerialKey`. Then open a solution, set **EdiFabric.Examples.VDA.Read** as the startup project, and run it.
+The demo serial key in `Config.TrialSerialKey` works without an account. When its quota runs out, **sign up free for Community** at [edifabric.com/pricing](https://www.edifabric.com/pricing.html) and put your own serial there. Open a solution, set **EdiFabric.Examples.VDA.Read** as the startup project, and run it.
 
 From the command line:
 
@@ -36,7 +43,7 @@ cd "NET 6/EdiFabric.Examples.VDA.Read"
 dotnet run
 ```
 
-The project reads `Files/Vda_4905_02.txt` and `Files/Vda_4905_02_Batch.txt` with `VdaReader`. VDA has no envelope that names the message, so each sample passes a `MessageContext` factory that recognizes record `51102` as message 4905 and loads `EdiFabric.Templates.Vda`.
+The project reads `Files/Vda_4905_02.txt` and `Files/Vda_4905_02_Batch.txt` with `VdaReader`. VDA has no envelope that names the message, so each sample passes a `MessageContext` factory that recognizes record `51102` as message 4905 and loads the templates from `EdiFabric.Examples.VDA.Common`.
 
 To translate your own file, change the path in `EdiFabric.Examples.VDA.Read/ReadVDA.cs`.
 
@@ -61,7 +68,7 @@ using (var ediReader = new VdaReader(ediStream, MessageContextFactory))
 var deliveryInstructions = ediItems.OfType<TS4905>();
 ```
 
-`MessageContextFactory` inspects the first record. When it starts with `51102`, it returns a `MessageContext` for `"4905"` and loads assembly `EdiFabric.Templates.Vda`. `ReadToEnd` loads the file into memory. **Read** also shows a batch file and an async read.
+`MessageContextFactory` inspects the first record. When it starts with `51102`, it returns a `MessageContext` for `"4905"` and loads the templates from assembly `EdiFabric.Examples.VDA.Common`. `ReadToEnd` loads the file into memory. **Read** also shows a batch file and an async read.
 
 ### Writing VDA
 
@@ -91,8 +98,12 @@ For another message, download its C# template from the EDI spec library. See [ED
 ## Licensing
 
 > [!NOTE]
+> All projects can be evaluated with the demo serial key `bd96a836feca45cb91c86ee65d281f52`
+> without creating an account. Once the limited quota for this provisional key runs out,
+> an account and a Community subscription are required to continue the evaluation.
+>
 > Sign up free for the [Community plan](https://www.edifabric.com/pricing.html)
-> to get an evaluation serial key. Community never expires, requires no credit
+> to get your own evaluation serial key. Community never expires, requires no credit
 > card, and is for non-production evaluation, learning, and prototyping
 > (unlimited operations for the first 14 days after you subscribe, then 250 per day;
 > to extend the unlimited period, ask through the [support portal](https://support.edifabric.com/hc/en-us/requests/new)
@@ -168,7 +179,7 @@ License failures throw `LicenseException`. `ErrorCode` is the number below, and 
 
 ## EDI templates
 
-These examples reference **EdiFabric.Templates.Vda** from NuGet, so they run without any setup. In your own application, use the C# templates from the [EDI spec library](https://www.edifabric.com/specs/index.html). The templates are the same on every plan, Community included. When you upgrade, you change only the serial key, and your template projects stay as they are.
+The examples reference the **EdiFabric.Examples.VDA.Common** project, which contains the C# templates for every message they use. In your own application, use the C# templates from the [EDI spec library](https://www.edifabric.com/specs/index.html) the same way. The templates are the same on every plan, Community included. When you upgrade, you change only the serial key, and your template projects stay as they are.
 
 ### Find and download a template
 
@@ -188,7 +199,7 @@ Put one version, or one trading partner, in one class library.
 1. Add a class library to the solution and install EdiFabric into it with `dotnet add package EdiFabric`.
 2. On .NET Framework only, reference `System.Runtime.Serialization` and `System.Xml.Serialization`.
 3. Unzip the downloads. Add the message file, for example `EF_VDA_TS4905.cs`, and every file in the Common folder of the version.
-4. Reference the class library from your application. In the `MessageContext` that `MessageContextFactory` returns, load the class library's assembly instead of `EdiFabric.Templates.Vda`. If the project is `ClassLibrary1`:
+4. Reference the class library from your application. In the `MessageContext` that `MessageContextFactory` returns, load the class library's assembly, as the examples do with `EdiFabric.Examples.VDA.Common`. If the project is `ClassLibrary1`:
 
 ```csharp
 mc => Assembly.Load(new AssemblyName("ClassLibrary1"))
